@@ -3,7 +3,8 @@ permissions:
   contents: read
   actions: read
 on:
-  workflow_dispatch:
+  push:
+    branches: [ main ]
 jobs:
   build-linux-x64:
     runs-on: ubuntu-latest
