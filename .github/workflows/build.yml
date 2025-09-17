@@ -17,7 +17,7 @@ jobs:
           ./main_linux_x64
 
   build-mac-x64:
-    runs-on: macos-15-large
+    runs-on: macos-13
     steps:
       - name: Checkout code
         uses: actions/checkout@v2
@@ -41,5 +41,5 @@ jobs:
         uses: actions/checkout@v2
       - name: Build and Run
         run: |
-          g++ -o main_winx_64 main_winx_64.cpp
-          ./main_winx_64
+          g++ -o main_win_x64 main_win_x64.cpp
+          ./main_win_x64
