@@ -7,19 +7,19 @@ This is a simple Hello World program, but with one twist - **the program doesn't
 
 ### Linux x64
 ```bash
-g++ -o main_linux_x64 main_linux_x64.cpp
+gcc -o main_linux_x64 main_linux_x64.c
 ```
 ### Mac x64
 ```bash
-g++ -o main_mac_x64 main_mac_x64.cpp
+gcc -o main_mac_x64 main_mac_x64.c
 ```
 ### Mac arm64
 ```bash
-g++ -o main_mac_arm64 main_mac_arm64.cpp
+gcc -o main_mac_arm64 main_mac_arm64.c
 ```
 ### Windows x64 (through WSL or MinGW)
 ```bash
-g++ -o main_win_x64 main_win_x64.cpp
+gcc -o main_win_x64 main_win_x64.c
 ```
 
 ## Run
@@ -42,4 +42,4 @@ g++ -o main_win_x64 main_win_x64.cpp
 ```
 
 ## Notes
-- This program is a simple example of how to write a Hello World program for different architectures without using any standard library functions.
+- This program has different implementations for different OSes and CPU architectures without using any standard library functions.

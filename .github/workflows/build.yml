@@ -13,7 +13,7 @@ jobs:
         uses: actions/checkout@v2
       - name: Build and Run
         run: |
-          g++ -o main_linux_x64 main_linux_x64.cpp
+          gcc -o main_linux_x64 main_linux_x64.c
           ./main_linux_x64
 
   build-mac-x64:
@@ -23,7 +23,7 @@ jobs:
         uses: actions/checkout@v2
       - name: Build and Run
         run: |
-          g++ -o main_mac_x64 main_mac_x64.cpp
+          gcc -o main_mac_x64 main_mac_x64.c
           ./main_mac_x64
   build-mac-arm64:
     runs-on: macos-latest
@@ -32,7 +32,7 @@ jobs:
         uses: actions/checkout@v2
       - name: Build and Run
         run: |
-          g++ -o main_mac_arm64 main_mac_arm64.cpp
+          gcc -o main_mac_arm64 main_mac_arm64.c
           ./main_mac_arm64
   build-winx-64:
     runs-on: windows-latest
@@ -41,5 +41,5 @@ jobs:
         uses: actions/checkout@v2
       - name: Build and Run
         run: |
-          g++ -o main_win_x64 main_win_x64.cpp
+          gcc -o main_win_x64 main_win_x64.c
           ./main_win_x64
